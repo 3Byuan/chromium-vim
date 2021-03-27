@@ -190,4 +190,5 @@ chrome.runtime.onMessage.addListener(function(request, sender, callback) {
   if (Options.hasOwnProperty(request.action)) {
     Options[request.action](request, sender, callback);
   }
+  return true;
 });

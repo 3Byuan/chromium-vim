@@ -131,4 +131,5 @@ chrome.runtime.onMessage.addListener(function(request, sender, callback) {
       sender: sender
     });
   }
+  return true;
 });
